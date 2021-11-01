@@ -1,0 +1,94 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://buttons.gd" type="Script" id=1]
+
+[sub_resource type="InputEventKey" id=1]
+scancode = 17
+
+[sub_resource type="ShortCut" id=2]
+shortcut = SubResource( 1 )
+
+[node name="buttons" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.43201
+margin_top = 1.43198
+margin_right = 1.43201
+margin_bottom = 1.43201
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="north" type="Button" parent="."]
+margin_left = 764.184
+margin_top = 117.752
+margin_right = 855.184
+margin_bottom = 187.752
+shortcut = SubResource( 2 )
+text = "North"
+
+[node name="west" type="Button" parent="."]
+margin_left = 662.184
+margin_top = 202.752
+margin_right = 753.184
+margin_bottom = 272.752
+text = "West"
+
+[node name="east" type="Button" parent="."]
+margin_left = 862.184
+margin_top = 199.752
+margin_right = 953.184
+margin_bottom = 269.752
+text = "East"
+
+[node name="south" type="Button" parent="."]
+margin_left = 764.184
+margin_top = 284.752
+margin_right = 855.184
+margin_bottom = 354.752
+text = "South"
+
+[node name="fire_torpedo" type="Button" parent="."]
+visible = false
+margin_left = 606.384
+margin_top = 381.652
+margin_right = 703.384
+margin_bottom = 451.652
+text = "Torpedo fired"
+
+[node name="sub_hit_indirect" type="Button" parent="."]
+visible = false
+margin_left = 709.184
+margin_top = 380.752
+margin_right = 800.184
+margin_bottom = 414.752
+text = "Indirect Hit"
+
+[node name="sub_hit_direct" type="Button" parent="."]
+visible = false
+margin_left = 709.184
+margin_top = 418.752
+margin_right = 800.184
+margin_bottom = 452.752
+text = "Direct Hit"
+
+[node name="drone_hit" type="Button" parent="."]
+visible = false
+margin_left = 807.184
+margin_top = 381.752
+margin_right = 898.184
+margin_bottom = 451.752
+text = "Drone "
+
+[node name="player_silence" type="Button" parent="."]
+visible = false
+margin_left = 904.184
+margin_top = 382.752
+margin_right = 995.184
+margin_bottom = 452.752
+text = "Silence"
+[connection signal="pressed" from="north" to="." method="_on_north_pressed"]
+[connection signal="pressed" from="west" to="." method="_on_west_button_pressed"]
+[connection signal="pressed" from="east" to="." method="_on_east_button_pressed"]
+[connection signal="pressed" from="south" to="." method="_on_south_button_pressed"]
