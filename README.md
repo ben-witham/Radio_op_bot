@@ -10,7 +10,7 @@ I've been working on the bot, but I'm not making as much progress as I'd like, s
 
 I've included all the project files below if you'd like to look at my code, but if you just want to use the software, there's also going to be an exe file that will play the game.
 
-[Here's the video demonstration](http://youtube.link.goes.here)
+[Here's the video demonstration](https://youtu.be/-kkcOID1tu0)
 
 # Development Environment
 
